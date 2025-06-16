@@ -36,7 +36,44 @@
         justify-content: space-between;
         width: 100%;
         margin-top: 45px;
+      }
+    }
 
+    .recents {
+      margin-top: 6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .title-recent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          font-size: 50px;
+          font-weight: 600;
+        }
+        .arrows-group {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 106px;
+
+          .arrow {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .arrow.reverse {
+            width: 45px;
+            height: 45px;
+            background-color: #1f1f1f;
+            border-radius: 50%;
+            transform: rotate(180deg);
+          }
+        }
       }
     }
   }
