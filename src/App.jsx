@@ -58,7 +58,7 @@ function App() {
               <p>Our recent projects</p>
               <div className="arrows-group">
                 <div className="arrow">
-                  <MdOutlineArrowBackIos size={24} />
+                  <MdOutlineArrowBackIos size={24} cursor={'pointer'}/>
                 </div>
                 <div className="arrow reverse">
                   <MdOutlineArrowBackIos size={24} color="white"/>
