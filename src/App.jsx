@@ -6,6 +6,11 @@ import email from "../public/images/email.svg";
 import pen from "../public/images/pen.svg";
 import CardInfo from "./components/card-infos/CardInfo";
 import { MdOutlineArrowBackIos } from "react-icons/md";
+import { Rating } from "@mui/material";
+import project1 from "../public/images/project1.svg";
+import project2 from "../public/images/project2.svg";
+import project3 from "../public/images/project3.svg";
+import RecentProjects from "./components/recent-projects/RecentProjects";
 
 function App() {
   return (
@@ -58,15 +63,45 @@ function App() {
               <p>Our recent projects</p>
               <div className="arrows-group">
                 <div className="arrow">
-                  <MdOutlineArrowBackIos size={24} cursor={'pointer'}/>
+                  <MdOutlineArrowBackIos size={24} cursor={"pointer"} />
                 </div>
                 <div className="arrow reverse">
-                  <MdOutlineArrowBackIos size={24} color="white"/>
+                  <MdOutlineArrowBackIos size={24} color="white" />
                 </div>
               </div>
             </div>
 
-            <div className="projects-items"></div>
+            <div className="projects-items-group">
+              <RecentProjects
+                image={project1}
+                title={"Sobha Hearland I Villas"}
+                description={
+                  "Lorem ipsum dolor sit amet consectetur. Adipiscing imperdietbibendum"
+                }
+                rating={4.6}
+                ratingNumber={"4.84"}
+              />
+
+              <RecentProjects
+                image={project2}
+                title={"Sobha Hearland II Villas"}
+                description={
+                  "Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum."
+                }
+                rating={4.6}
+                ratingNumber={"4.83"}
+              />
+
+              <RecentProjects
+                image={project3}
+                title={"Sobha Hearland III Villas"}
+                description={
+                  "Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum."
+                }
+                rating={4.6}
+                ratingNumber={"4.83"}
+              />
+            </div>
           </div>
         </div>
       </div>
