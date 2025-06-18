@@ -1,5 +1,4 @@
 .property-card {
-    height: 550px;
     border: 1px solid transparent;
     border-radius: 15px;
     background: #c1dee8;
@@ -8,12 +7,13 @@
       rgba(193, 222, 232, 1) 0%,
       rgba(251, 217, 185, 1) 100%
     );
-    padding: 0px 10px;
     display: flex;
     justify-content: space-between;
 
+    .text-property.centeredText{
+      justify-content: center;
+    }
     .text-property {
-      width: 480px;
       display: flex;
       flex-direction: column;
       gap: 23px;
@@ -31,7 +31,7 @@
       .label {
         position: relative;
         .input {
-          width: 438px;
+          width: 100%;
           padding: 15px 20px;
           border-radius: 40px;
           outline: none;
@@ -59,7 +59,7 @@
       }
     }
     .image-property{
-      width: 648px;
+      // width: 648px;
       height: 100%;
 
       .image1{

@@ -1,6 +1,6 @@
 import "./App.scss";
 import Header from "./components/header/Header";
-import House1 from "./components/house1/House1";
+import HouseCard from "./components/houseCard/HouseCard";
 import chat from "../public/images/message.svg";
 import email from "../public/images/email.svg";
 import pen from "../public/images/pen.svg";
@@ -11,6 +11,7 @@ import project1 from "../public/images/project1.svg";
 import project2 from "../public/images/project2.svg";
 import project3 from "../public/images/project3.svg";
 import statisticImage from "../public/images/statistic.svg";
+import house1 from "../public/images/House1.png"
 import RecentProjects from "./components/recent-projects/RecentProjects";
 import Button from "./components/button/Button";
 import MiniCard from "./components/StatisticMiniCard/MiniCard";
@@ -20,7 +21,17 @@ function App() {
     <div className="container">
       <Header />
       <div className="main-content">
-        <House1 />
+        <HouseCard
+          heightContainer={550}
+          paddingContainer={"0px 10px"}
+          textTop
+          widthImage={648}
+          widthText={642}
+          widthLabel={438}
+          title={"Manage Your Property"}
+          subtitle={"Your will have everything nearby supermarket, buses, station, thecarmen neighborhood, etc"}
+          image={house1}
+        />
         <div className="informations">
           <div className="title-info">
             <div className="small-title">
@@ -133,9 +144,9 @@ function App() {
                   <Button text={"Read More"} />
                 </div>
                 <div className="statistics-group-items">
-                <MiniCard title={"12"} subtitle={"Customers"}/>
-                <MiniCard title={"14"} subtitle={"Offices"}/>
-                <MiniCard title={"10"} subtitle={"Students"}/>
+                  <MiniCard title={"12"} subtitle={"Customers"} />
+                  <MiniCard title={"14"} subtitle={"Offices"} />
+                  <MiniCard title={"10"} subtitle={"Students"} />
                 </div>
               </div>
               <div className="statistics-image">
