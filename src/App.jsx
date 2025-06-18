@@ -12,6 +12,7 @@ import project2 from "../public/images/project2.svg";
 import project3 from "../public/images/project3.svg";
 import statisticImage from "../public/images/statistic.svg";
 import house1 from "../public/images/House1.png"
+import house2 from "../public/images/house2.svg"
 import RecentProjects from "./components/recent-projects/RecentProjects";
 import Button from "./components/button/Button";
 import MiniCard from "./components/StatisticMiniCard/MiniCard";
@@ -38,7 +39,7 @@ function App() {
           paddingContainer={"0px 10px"}
           textTop
           widthImage={648}
-          widthText={642}
+          widthText={479}
           widthLabel={438}
           value={form.property}
           onChange={handleChange}
@@ -170,9 +171,21 @@ function App() {
             </div>
           </div>
 
-          {/* <div className="newsLetter">
-
-          </div> */}
+          <div className="newsLetter">
+          <HouseCard
+          heightContainer={479}
+          paddingContainer={"0px 25px"}
+          widthImage={648}
+          widthText={642}
+          widthLabel={464}
+          value={form.newsLetter}
+          onChange={handleChange}
+          inputName="newsLetter"
+          title={"Subscribe Our Newsletter"}
+          subtitle={"Lorem ipsum dolor sit amet consectetur. Feugiat ut aliquet sit pellentesque sollicitudin. Egestas faucibus lacus diam in senectus consectetur. Mattis elit adipiscing quisque tellus scelerisque vehicula ante nunc."}
+          image={house2}
+        />
+          </div>
         </div>
       </div>
     </div>
