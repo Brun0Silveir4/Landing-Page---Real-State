@@ -15,8 +15,20 @@ import house1 from "../public/images/House1.png"
 import RecentProjects from "./components/recent-projects/RecentProjects";
 import Button from "./components/button/Button";
 import MiniCard from "./components/StatisticMiniCard/MiniCard";
+import { useState } from "react";
 
 function App() {
+
+  const [form, setForm] = useState({
+    property: "",
+    newsLetter: ""
+  })
+
+  const handleChange = (campo, valor) => {
+    setForm((prev) => ({ ...prev, [campo]: valor }));
+  };
+
+
   return (
     <div className="container">
       <Header />
@@ -28,6 +40,9 @@ function App() {
           widthImage={648}
           widthText={642}
           widthLabel={438}
+          value={form.property}
+          onChange={handleChange}
+          inputName="property"
           title={"Manage Your Property"}
           subtitle={"Your will have everything nearby supermarket, buses, station, thecarmen neighborhood, etc"}
           image={house1}
@@ -154,6 +169,10 @@ function App() {
               </div>
             </div>
           </div>
+
+          {/* <div className="newsLetter">
+
+          </div> */}
         </div>
       </div>
     </div>
