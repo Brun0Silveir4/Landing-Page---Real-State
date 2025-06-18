@@ -110,7 +110,6 @@
 
         .statistics-infos{
           width: 519px;
-          border: 1px solid red;
           display: flex;
           flex-direction: column;
           gap: 63px;
@@ -132,6 +131,21 @@
             display: flex;
             gap: 24px;
             height: 60px;
+          }
+
+          .statistics-group-items{
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+        .statistics-image{
+          width: 550px;
+          height: 100%;
+
+          img{
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
           }
         }
       }

@@ -10,9 +10,10 @@ import { Rating } from "@mui/material";
 import project1 from "../public/images/project1.svg";
 import project2 from "../public/images/project2.svg";
 import project3 from "../public/images/project3.svg";
-import statisticImage from "../public/images/statistic.svg"
+import statisticImage from "../public/images/statistic.svg";
 import RecentProjects from "./components/recent-projects/RecentProjects";
 import Button from "./components/button/Button";
+import MiniCard from "./components/StatisticMiniCard/MiniCard";
 
 function App() {
   return (
@@ -25,8 +26,7 @@ function App() {
             <div className="small-title">
               <p>Three steps. Three minutes.</p>
             </div>
-            <div className="btn-teste">
-            </div>
+            <div className="btn-teste"></div>
             <div className="big-title">
               <p>Everything should be this easy</p>
             </div>
@@ -133,10 +133,9 @@ function App() {
                   <Button text={"Read More"} />
                 </div>
                 <div className="statistics-group-items">
-                <div className="group-item">
-                  <p>12+</p>
-                  <p>Customers</p>
-                </div>
+                <MiniCard title={"12"} subtitle={"Customers"}/>
+                <MiniCard title={"14"} subtitle={"Offices"}/>
+                <MiniCard title={"10"} subtitle={"Students"}/>
                 </div>
               </div>
               <div className="statistics-image">
