@@ -1,4 +1,5 @@
 import House from "../../../public/images/House1.png"
+import Button from "../button/Button";
 import "./House1.scss"
 
 export default function House1() {
@@ -22,7 +23,7 @@ export default function House1() {
 
         <div className="label">
           <input type="text" placeholder="Enter your email" className="input" />
-          <p>Get a Quote</p>
+          <Button dark text={"Get a Quote"} />
         </div>
       </div>
 

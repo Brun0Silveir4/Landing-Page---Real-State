@@ -10,6 +10,7 @@ import { Rating } from "@mui/material";
 import project1 from "../public/images/project1.svg";
 import project2 from "../public/images/project2.svg";
 import project3 from "../public/images/project3.svg";
+import statisticImage from "../public/images/statistic.svg"
 import RecentProjects from "./components/recent-projects/RecentProjects";
 import Button from "./components/button/Button";
 
@@ -107,7 +108,7 @@ function App() {
             </div>
           </div>
 
-          {/* <div className="statistics">
+          <div className="statistics">
             <div className="statistics-title">
               <p>We are a global, boutique real estate brokerage</p>
             </div>
@@ -127,12 +128,22 @@ function App() {
                     </p>
                   </div>
                 </div>
-                <div className="infos-btn-group"></div>
-                <div className="statistics item"></div>
+                <div className="infos-btn-group">
+                  <Button text={"Book Now!"} dark />
+                  <Button text={"Read More"} />
+                </div>
+                <div className="statistics-group-items">
+                <div className="group-item">
+                  <p>12+</p>
+                  <p>Customers</p>
+                </div>
+                </div>
               </div>
-              <div className="statistics-image"></div>
+              <div className="statistics-image">
+                <img src={statisticImage} alt="" />
+              </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
