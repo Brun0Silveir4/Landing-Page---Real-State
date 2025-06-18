@@ -1,6 +1,7 @@
 import "./Header.scss";
 import Logo from "../../../public/images/Logo.svg";
 import { LuSearch } from "react-icons/lu";
+import Button from "../button/Button";
 
 export default function Header() {
   return (
@@ -18,7 +19,7 @@ export default function Header() {
       </div>
       <div className="btn-group-header">
         <p className="btn-other">Other services</p>
-        <p className="btn-contact">Contact Us</p>
+        <Button text={"Contact Us"} />
       </div>
     </div>
   );

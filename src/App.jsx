@@ -11,6 +11,7 @@ import project1 from "../public/images/project1.svg";
 import project2 from "../public/images/project2.svg";
 import project3 from "../public/images/project3.svg";
 import RecentProjects from "./components/recent-projects/RecentProjects";
+import Button from "./components/button/Button";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <div className="title-info">
             <div className="small-title">
               <p>Three steps. Three minutes.</p>
+            </div>
+            <div className="btn-teste">
             </div>
             <div className="big-title">
               <p>Everything should be this easy</p>
@@ -103,6 +106,33 @@ function App() {
               />
             </div>
           </div>
+
+          {/* <div className="statistics">
+            <div className="statistics-title">
+              <p>We are a global, boutique real estate brokerage</p>
+            </div>
+            <div className="statistics-content">
+              <div className="statistics-infos">
+                <div className="infos-heading">
+                  <div className="infos-title">
+                    <p>The transfer of real estate</p>
+                  </div>
+                  <div className="infos-subtitle">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Feugiat ut aliquet
+                      sit pellentesque sollicitudin. Egestas faucibus lacus diam
+                      in senectus consectetur. Mattis elit adipiscing quisque
+                      tellus scelerisque vehicula ante nunc. Tellus consequat
+                      nisl quis nisl justo.
+                    </p>
+                  </div>
+                </div>
+                <div className="infos-btn-group"></div>
+                <div className="statistics item"></div>
+              </div>
+              <div className="statistics-image"></div>
+            </div>
+          </div> */}
         </div>
       </div>
     </div>
