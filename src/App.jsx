@@ -47,6 +47,10 @@ function App() {
           title={"Manage Your Property"}
           subtitle={"Your will have everything nearby supermarket, buses, station, thecarmen neighborhood, etc"}
           image={house1}
+          gap={23}
+          gapHeading={20}
+          titleSize={67}
+          subtitleWidth={435}
         />
         <div className="informations">
           <div className="title-info">
@@ -175,7 +179,7 @@ function App() {
           <HouseCard
           heightContainer={479}
           paddingContainer={"0px 25px"}
-          widthImage={648}
+          widthImage={522}
           widthText={642}
           widthLabel={464}
           value={form.newsLetter}
@@ -184,6 +188,10 @@ function App() {
           title={"Subscribe Our Newsletter"}
           subtitle={"Lorem ipsum dolor sit amet consectetur. Feugiat ut aliquet sit pellentesque sollicitudin. Egestas faucibus lacus diam in senectus consectetur. Mattis elit adipiscing quisque tellus scelerisque vehicula ante nunc."}
           image={house2}
+          gap={45}
+          gapHeading={20}
+          titleSize={50}
+          subtitleWidth={526}
         />
           </div>
         </div>

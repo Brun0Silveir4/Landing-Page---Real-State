@@ -13,13 +13,15 @@
     .text-property.centeredText{
       justify-content: center;
     }
+    .heading-card{
+      display: flex;
+      flex-direction: column;
+    }
     .text-property {
       display: flex;
       flex-direction: column;
-      gap: 23px;
 
       .title p {
-        font-size: 67px;
         font-weight: 600;
         line-height: 120%;
       }
@@ -59,7 +61,6 @@
       }
     }
     .image-property{
-      // width: 648px;
       height: 100%;
 
       .image1{

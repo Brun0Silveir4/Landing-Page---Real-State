@@ -15,6 +15,10 @@ export default function HouseCard({
   onChange,
   inputName,
   widthImage,
+  gap,
+  gapHeading,
+  titleSize,
+  subtitleWidth
 }) {
   const ClearInput = () => {
     if (value) {
@@ -31,7 +35,7 @@ export default function HouseCard({
       });
       onChange(inputName, "");
     } else {
-      toast.warning("Preencha corretamente!", {
+      toast.warning("Por favor, preencha o campo antes de continuar.!", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -51,24 +55,25 @@ export default function HouseCard({
     >
       <div
         className={`text-property ${textTop ? "" : "centeredText"}`}
-        style={{ width: `${widthText}px` }}
+        style={{ width: `${widthText}px`, gap: `${gap}px` }}
       >
-        {textTop ? (
-          <div className="welcome">
-            <p>Welcome to Realstate</p>
+        <div className="heading-card" style={{gap: `${gapHeading}px`}}>
+          {textTop ? (
+            <div className="welcome">
+              <p>Welcome to Realstate</p>
+            </div>
+          ) : (
+            ""
+          )}
+
+          <div className="title">
+            <p style={{fontSize: `${titleSize}px`}}>{title}</p>
           </div>
-        ) : (
-          ""
-        )}
 
-        <div className="title">
-          <p>{title}</p>
+          <div className="subtitle" style={{width: `${subtitleWidth}px`}}>
+            <p>{subtitle}</p>
+          </div>
         </div>
-
-        <div className="subtitle">
-          <p>{subtitle}</p>
-        </div>
-
         <div className="label" style={{ width: `${widthLabel}px` }}>
           <input
             type="text"
