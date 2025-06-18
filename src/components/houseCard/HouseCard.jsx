@@ -35,7 +35,7 @@ export default function HouseCard({
       });
       onChange(inputName, "");
     } else {
-      toast.warning("Por favor, preencha o campo antes de continuar.!", {
+      toast.warning("Por favor, preencha o campo antes de continuar!", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
