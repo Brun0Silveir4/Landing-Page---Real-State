@@ -1,0 +1,11 @@
+@media (max-width: 1260px){
+    .property-card{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px !important;
+
+        .text-property .label{
+            width: 100% !important;
+        }
+    }
+}

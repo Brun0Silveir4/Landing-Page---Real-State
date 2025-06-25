@@ -1,0 +1,55 @@
+@import '../header/Header';
+
+.bm-burger-button {
+    position: relative;
+    width: 25px;
+    height: 20px;
+  }
+  
+  .bm-burger-bars {
+    background: #1f1f1f;
+  }
+  
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .bm-menu-wrap {
+    position: fixed ;
+    height: 100%;
+    top: 0;
+  }
+  
+  
+  .bm-menu {
+    background: #C1DEE8;
+    background: linear-gradient(180deg, rgba(193, 222, 232, 1) 79%, rgba(251, 217, 185, 1) 100%);
+    height: 100% !important;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    overflow: auto;
+  }
+  
+  .bm-item {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: bold;
+    transition: color 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .bm-item:hover {
+    color: #d87c5a;
+  }
+
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  .bm-cross {
+    background: black;
+  }
+  

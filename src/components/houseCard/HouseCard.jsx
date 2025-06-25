@@ -51,7 +51,7 @@ export default function HouseCard({
   return (
     <div
       className="property-card"
-      style={{ height: `${heightContainer}px`, padding: `${paddingContainer}` }}
+      style={{ minHeight: `${heightContainer}px`, padding: `${paddingContainer}` }}
     >
       <div
         className={`text-property ${textTop ? "" : "centeredText"}`}
