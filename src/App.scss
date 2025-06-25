@@ -25,10 +25,13 @@
           line-height: 120%;
         }
 
-        .big-title p {
-          font-size: 50px;
-          font-weight: 600;
-          line-height: 120%;
+        .big-title {
+          text-align: center;
+          p{
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 120%;
+          }
         }
       }
 
@@ -41,6 +44,7 @@
     }
 
     .recents {
+      width: 100%;
       margin-top: 6rem;
       display: flex;
       flex-direction: column;
@@ -90,14 +94,14 @@
       gap: 45px;
 
       .statistics-title{
-        width: 100%;
+        max-width: 100%;
         text-wrap: wrap;
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
         p{
-          width: 785px;
+          max-width: 785px;
           font-size: 50px;
           font-weight: 600;
         }
@@ -110,7 +114,7 @@
         align-items: center;
 
         .statistics-infos{
-          width: 519px;
+          max-width: 519px;
           display: flex;
           flex-direction: column;
           gap: 63px;
@@ -128,7 +132,7 @@
           }
 
           .infos-btn-group{
-            width: 333px;
+            max-width: 333px;
             display: flex;
             gap: 24px;
             height: 60px;
@@ -140,7 +144,7 @@
           }
         }
         .statistics-image{
-          width: 550px;
+          max-width: 550px;
           height: 100%;
 
           img{
@@ -159,4 +163,4 @@
   }
 }
 
-@import 'media-home';
+@import 'mobile-home';

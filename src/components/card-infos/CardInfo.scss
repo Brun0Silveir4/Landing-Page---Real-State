@@ -1,5 +1,5 @@
 .item {
-    width: 460px;
+    max-width: 460px;
     display: flex;
     flex-direction: column;
     gap: 22px;
@@ -10,5 +10,9 @@
     .title-card p{
       font-size: 28px;
       font-weight: 600;
+    }
+
+    .text-card{
+      width: 90%;
     }
   }

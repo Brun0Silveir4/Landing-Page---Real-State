@@ -87,7 +87,7 @@ export default function HouseCard({
         </div>
       </div>
 
-      <div className="image-property" style={{ width: `${widthImage}px` }}>
+      <div className="image-property" style={{ maxWidth: `${widthImage}px` }}>
         <img src={image} alt="" className="image1" />
       </div>
     </div>

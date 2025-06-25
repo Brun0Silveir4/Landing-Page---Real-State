@@ -19,15 +19,21 @@
     }
     .text-property {
       display: flex;
+      max-width: 100%;
       flex-direction: column;
 
-      .title p {
-        font-weight: 600;
-        line-height: 120%;
+      .title {
+        p{
+          font-weight: 600;
+          line-height: 120%;
+        }
       }
 
-      .subtitle p {
-        line-height: 24px;
+      .subtitle{
+        max-width: 100%;
+        p{
+          line-height: 24px;
+        }
       }
 
       .label {
