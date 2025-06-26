@@ -43,6 +43,8 @@ npm run dev
 ```
 O app estará rodando localmente em: `http://localhost:5173`
 
+Aplicação no ar: https://landing-page-real-state-five.vercel.app
+
 <br>
 
 ## 🙋‍♂️ Autor
