@@ -83,7 +83,6 @@ export default function HouseCard({
             onChange={(e) => onChange(inputName, e.target.value)}
           />
           <Button dark text={"Get a Quote"} onClick={ClearInput} />
-          <ToastContainer />
         </div>
       </div>
 

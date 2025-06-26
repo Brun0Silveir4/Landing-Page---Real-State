@@ -17,6 +17,7 @@ import RecentProjects from "./components/recent-projects/RecentProjects";
 import Button from "./components/button/Button";
 import MiniCard from "./components/StatisticMiniCard/MiniCard";
 import { useState } from "react";
+import { ToastContainer } from "react-toastify";
 
 function App() {
 
@@ -196,6 +197,7 @@ function App() {
           </div>
         </div>
       </div>
+        <ToastContainer />
     </div>
   );
 }
